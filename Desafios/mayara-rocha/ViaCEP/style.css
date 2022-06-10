@@ -11,9 +11,7 @@ body {
   background-color:#E9E9;
 }
 .cep{
- 
-  display:flex;
-
+   display:flex;
 }
 
 .form-label{
