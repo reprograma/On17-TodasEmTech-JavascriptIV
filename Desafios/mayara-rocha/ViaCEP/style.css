@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital@1&family=Nuosu+SIL&display=swap');
+
+*{
+  margin: 0;
+  font-family: 'Nuosu SIL', serif;
+  
+}
+
+body {
+  margin-top:50px;
+  background-color:#E9E9;
+}
+.cep{
+ 
+  display:flex;
+
+}
+
+.form-label{
+ margin-right:8px;
+  font-weight: bold;
+  font-size:20px;
+}
+.row .form-label{
+  width:100px;
+  font-weight: bold;
+  font-size:20px;
+}
+
+ input{
+ margin: 5px;
+  height:30px;
+  font-size: 20px;
+}
+.formulario {
+
+ display:flex;
+ align-items:center;
+ justify-content: center;
+ background-color: white;
+ max-width: 500px;
+ width: 70%;
+ padding:100px 200px;
+ position:absolute;
+ left: 50%;
+ top: 50%;
+ transform:translate(-50%,-50%);
+}
+#submit{
+  width:100px;
+  border: none;
+  padding: 10px;
+  border-radius:8px;
+  margin:5px;
+  text-transform: uppercase;
+  font-weight:800;
+  letter-spacing:3px;
+  color:#201b2c;
+  background:#7e459b;
+  cursor:pointer;
+ 
+}
+#submit:hover{
+  background-color:#E9E9;
+}
