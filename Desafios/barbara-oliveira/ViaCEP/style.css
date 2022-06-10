@@ -1,3 +1,29 @@
-.movie {
-  background-color: gray;
+body {
+  background: black;
+}
+
+#endereco {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.cep {
+  padding: 3rem 5rem;
+  border: 3px solid lightblue;
+  border-radius: 10px;
+}
+
+.cep:hover {
+  background: lightblue;
+}
+
+.cep:hover p {
+  color: black;
+}
+
+.text {
+  font-size: 30px;
+  color: lightblue;
 }

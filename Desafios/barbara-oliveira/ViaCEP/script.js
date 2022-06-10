@@ -5,11 +5,11 @@ const container = document.getElementById("endereco");
 function generateCardHtml({ cep, logradouro, bairro, localidade, uf }) {
   return `
         <div class="cep">
-          <p>CEP: ${cep} </p>
-          <p>Logradouro: ${logradouro}</p>
-          <p>Bairro: ${bairro}</p>
-          <p>Localidade: ${localidade}</p>
-          <p>UF: ${uf}</p>
+          <p class = "text" >CEP: ${cep} </p>
+          <p class = "text">Logradouro: ${logradouro}</p>
+          <p class = "text">Bairro: ${bairro}</p>
+          <p class = "text">Localidade: ${localidade}</p>
+          <p class = "text">UF: ${uf}</p>
         </div>
       `;
 }
