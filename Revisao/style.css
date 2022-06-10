@@ -30,7 +30,7 @@ body {
   height: 400px;
 }
 
-.card img {
+.card .image {
   width: 100%;
   align-self: center;
   box-shadow: 1px 1px 10px #7f8fa6;
