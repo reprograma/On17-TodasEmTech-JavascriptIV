@@ -1,5 +1,4 @@
 const dogName = 'chihuahua'
-
 const url = ` https://dog.ceo/api/breed/${dogName}/images/random `
 const container = document.getElementById("demo")
 
