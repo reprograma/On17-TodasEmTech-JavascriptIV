@@ -12,8 +12,8 @@ body {
   display: flex;
   justify-content: flex-start;
   margin-left: 20px;
-  align-items: center;
-  background-image: url(./yugi.jpg);
+  align-items:flex-end;
+  background-image: url();
   background-size: cover;
 }
 
