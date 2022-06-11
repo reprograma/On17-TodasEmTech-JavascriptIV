@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+    font-family: "JetBrains Mono";
+    color: #353b48;
+  }
+  
+  body {
+    height: 95vh;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-image: url(.//img/background.azul.jpg);
+    background-size: cover;
+  }
+  
+  #demo {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    width: 180px;
+    height: 400px;
+  }
+  
+  .card .image {
+    width: 100%;
+    align-self: center;
+    box-shadow: 1px 1px 10px #7f8fa6;
+  }
+  
+  .title {
+    font-size: 2rem;
+  }
+  
+  .director {
+    align-self: flex-start;
+    font-style: italic;
+
+  }
+
+  .dataLancamento {
+    align-self: flex-start;
+    font-style: italic;
+  }
+  
+
+  .dataLancamento::before {
+    content: '✡️';  
+    font-style: normal;
+    margin-right: 2px;
+  }
+  
+  .description {
+    margin-top: 10px;
+  }
+
+  p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 17px;
+    margin-top: 15px;
+
+  }
+
+  h1 {
+    font-weight: bold;
+    background-color: white;
+    border-radius: 5px;
+    
+  }
+
