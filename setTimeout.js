@@ -4,11 +4,11 @@
 
 setTimeout(() => {
   console.log('retorno primeira callback')
-}, 5000)
+}, 5000) // vai  ser retornado depois de 5 segundos
 
 setTimeout(() => {
 console.log('retorno segunda callback')
-})
+})//vai ser executado no mesmo segundo
 
 console.log('console direto 1')
 
