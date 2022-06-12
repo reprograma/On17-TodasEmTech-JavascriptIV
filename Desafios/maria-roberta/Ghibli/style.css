@@ -15,8 +15,7 @@ body {
   display: flex;
   justify-content:center;
   align-items: center;
-  background-image: url(.//img/background.azul.jpg);
-  background-size: cover;
+  background-color: #749aeb;
 }
 
 #titulo-principal {
