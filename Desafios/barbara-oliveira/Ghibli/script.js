@@ -8,14 +8,15 @@ function generateCardHtml({
   rt_score,
 }) {
   return `
-    <div class="movie">
+    <div class="card">
       <img src="${image}" />
-      <h1>${title}</h1>
-      <p>Descrição: ${description}</p>
-      <p>Director: ${director}</p>
-      <p>Produtor: ${producer}</p>
-      <p>Lançamento: ${running_time}</p>
-      <p>Pontuação: ${rt_score}</p>
+      <div class = "info-card">
+      <h2>${title}</h2>
+      <p><span>Descrição:</span> ${description}</p>
+      <p><span>Director:</span> ${director}</p>
+      <p><span>Produtor:</span> ${producer}</p>
+      <p><span>Lançamento:</span> ${running_time}</p>
+      <p><span>Pontuação:</span> ${rt_score}</p>
     </div>
   `;
 }
