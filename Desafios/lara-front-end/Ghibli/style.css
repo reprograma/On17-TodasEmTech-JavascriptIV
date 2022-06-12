@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+body {
+    background: url("./images/studio-ghibli-desktop.jpg") repeat-y;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+
+}
+
+header {
+    margin-top: 2rem;
+    background-color: #537D8D;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: antiquewhite;
+}
+
+.logo-img {
+    max-width: 10rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.img1 {
+    padding-left: 5rem;
+}
+
+.img2 {
+    width: 30rem;
+    padding-right: 7rem;
+}
+
+.img-div {
+    height: 200px;
+    width: 200px;
+    border-radius: 30%;
+    padding: 3px;
+    background: #537D8D;
+}
+
+.card-img {
+    height: 100%;
+    width: 100%;    
+    object-fit: cover;
+    border-radius: 30%;
+    border: 3px solid #fff;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 30px;
+    text-align: center;
+}
+
+.text-infos {
+   padding: 10px;
+   color: #305d6e;
+}
