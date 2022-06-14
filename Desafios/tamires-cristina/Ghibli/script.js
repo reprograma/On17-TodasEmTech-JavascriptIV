@@ -4,7 +4,7 @@ async function getFilms() {
   try {
     const response = await fetch("https://ghibliapi.herokuapp.com/films");
     const films = await response.json();
-    renderFilms(films);
+    return renderFilms(films);
   } catch (err) {
     console.error(`ERROR: ${err}`);
   }
