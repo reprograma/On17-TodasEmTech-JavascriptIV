@@ -1,0 +1,21 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    font-size: 10px;
+}
+
+img{
+    width: 10rem;
+}
+
+h1{
+    font-size: 1rem;
+}
+
+p{
+    font-size: 1rem;
+}
