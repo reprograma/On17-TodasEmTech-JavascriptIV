@@ -13,6 +13,7 @@ body {
 .cep{
 
   display:flex;
+  margin-left: -152px;
 
 }
 
@@ -20,11 +21,14 @@ body {
  margin-right:8px;
   font-weight: bold;
   font-size:20px;
+
 }
+
 .row .form-label{
   width:100px;
   font-weight: bold;
   font-size:20px;
+  
 }
 
  input{
@@ -45,6 +49,7 @@ body {
  left: 50%;
  top: 50%;
  transform:translate(-50%,-50%);
+ border-radius: 20px;
 }
 #submit{
   width:100px;
@@ -62,4 +67,5 @@ body {
 }
 #submit:hover{
   background-color:rgba(153, 176, 238, 0.6);
+  font-style: italic;
 } 
