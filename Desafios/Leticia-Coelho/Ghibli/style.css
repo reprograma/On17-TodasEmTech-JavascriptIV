@@ -1,8 +1,22 @@
-.movies{
+.filmes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 40px;
     background-color: #141414;
-    color: #fff;
-    text-align: center;
-    list-style: none;
+}
+
+.image{
+    height: 20rem;
+}
+
+.filme_h2, .card_h3, .description, .director, .producer {
+    color: white;
+}
+
+.description{
+    padding: 0 20rem;
 }
 
 

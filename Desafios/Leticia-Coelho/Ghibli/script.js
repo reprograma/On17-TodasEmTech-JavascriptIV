@@ -1,46 +1,61 @@
-function generateCardHtml({
-    image,
-    title,
-    description,
-    director,
-    producer,
-    running_time,
-    rt_score,
-  }) {
-    return `
-      <div class="movie">
-        <img src="${image}" />
-        <h1>${title}</h1>
-        <p>Descrição: ${description}</p>
-        <p>Director: ${director}</p>
-        <p>Produtor: ${producer}</p>
-        <p>Lançamento: ${running_time}</p>
-        <p>Pontuação: ${rt_score}</p>
-      </div>
-    `;
+const filmes = document.querySelector(".filmes");
+const url = `https://ghibliapi.herokuapp.com/films`;
+
+const getFilmesData = async () => {
+
+  try{
+      const response = await fetch(url);
+      
+          const data = await response.json(); 
+          console.log(data);
+          
+
+          data.map((film) => {
+
+            const img = document.createElement('img')
+            img.className = "image";
+            img.setAttribute("src", film.image)
+            filmes.appendChild(img)
+
+            const titulo = document.createElement("h2");
+            titulo.className = "filme_h2";
+            titulo.innerText = `${film.title}`;
+            filmes.appendChild(titulo);
+
+            const subtitulo = document.createElement("h3");
+            subtitulo.className = "card_h3";
+            subtitulo.innerText = `${film.original_title}`;
+            filmes.appendChild(subtitulo);
+
+            const description = document.createElement("p");
+            description.className = "description";
+            description.innerText = `${film.description}`;
+            filmes.appendChild(description);
+
+            const director = document.createElement("p");
+            director.className = "director";
+            director.innerText = `Director: ${film.director}`;
+            filmes.appendChild(director);
+
+            const producer = document.createElement("p");
+            producer.className = "producer";
+            producer.innerText = `Produtor: ${film.producer}`;
+            filmes.appendChild(producer);
+
+            const release_date = document.createElement("p");
+            release_date.className = "producer";
+            release_date.innerText = `Data de lançamento: ${film.release_date}`;
+            filmes.appendChild(release_date);
+
+          });
+
+          
+
+          
   }
-  
-  async function getMovies(url) {
-    try {
-      const resposta = await fetch(url);
-      const movies = await resposta.json();
-      return movies;
-    } catch (err) {
-      console.error("HTTP Error: " + err);
-    }
+  catch(err){
+      console.error("Não funcionou", err);
   }
-  
-  function renderMovies(movies, container) {
-    for (const movie of movies) {
-      const li = document.createElement("li");
-      li.classList.add("movie-container");
-      li.innerHTML = generateCardHtml(movie);
-      container.appendChild(li);
-    }
-  }
-  
-  (() => {
-    const url = "https://ghibliapi.herokuapp.com/films";
-    const container = document.querySelector(".movies");
-    getMovies(url).then((movies) => renderMovies(movies, container));
-  })();
+};
+
+getFilmesData();
