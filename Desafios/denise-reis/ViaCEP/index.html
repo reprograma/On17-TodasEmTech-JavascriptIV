@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Consulta CEP</title>
+</head>
+<body>
+    <div id="container"></div>
+    <h1>Pesquisa via CEP</h1>
+    <form id="form1">
+        <label>CEP</label>
+        <input id="digitarCep" type="number" name="CEP" placeholder="Digite o CEP aqui">
+        <small>sem traços, pontos ou vírgula</small>
+          <button type="button" onclick="getCep()">Entrar</button>
+    </form>
+    <form id="form2">
+        <label for="logradouro">Logradouro:</label>
+        <input id="logradouro" type="text" name="logradouro">
+       
+        <label for="bairro">Bairro:</label>
+        <input id="bairro" type="text" name="bairro">
+
+        <label for="localidade">Localidade:</label>
+        <input id="localidade" type="text" name="localidade">
+
+        <label for="uf">UF:</label>
+        <input id="uf" type="text" name="UF">
+
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
