@@ -1,3 +1,5 @@
+//formato de objeto
+
 const dados = {
   "squadName": "Super hero squad",
   "homeTown": "Metro City",
@@ -37,6 +39,8 @@ const dados = {
 }
 
 console.log(dados.members[1].name)
+
+//jason como array
 
 const json = [
   {
