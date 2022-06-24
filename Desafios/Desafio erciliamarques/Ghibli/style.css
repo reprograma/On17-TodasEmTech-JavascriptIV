@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+    font-family: sans-serif;
+    color: black;
+
+}
+
+body {
+    background-image: url("https://i.pinimg.com/originals/53/a0/fa/53a0fa7564a6f29f7aa08d9c1ef676c1.jpg");
+    background-size: cover;
+}
+
+#demo {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.card img {
+    width: 100%;
+    align-self: center;
+    box-shadow: 1px 1px 10px cadetblue;
+
+}
+
+.title {
+    font-size: 2rem;
+
+}
+
+.type {
+    align-self: flex-start;
+    font-style: italic;
+    font-size: 1.2rem;
+}
+
+.type::before{
+    content:emoji;
+    font-style: normal;
+    margin-right: 2px;
+
+}
+
+.description {
+    margin-top:  10px;
+
+}
