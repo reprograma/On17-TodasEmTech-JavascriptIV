@@ -36,7 +36,11 @@ const dados = {
   ]
 }
 
+
+console.log(dados.members[1])
+
 console.log(dados.members[1].name)
+
 
 const json = [
   {
@@ -55,6 +59,14 @@ const json = [
       "Superhuman reflexes"
     ]
   }
+
+]
+
+//console.log(json[0].age)
+
+console.log(json[0]["powers"][0]);
+
 ] 
 
 console.log(json[0].age)
+
