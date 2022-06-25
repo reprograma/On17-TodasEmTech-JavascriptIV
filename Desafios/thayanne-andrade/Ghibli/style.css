@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    background-color: #ebd4b7;
+}
+
+h1 {
+    font-weight: 700;
+    text-align: center;
+    padding: 10px;
+}
+#demo {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    place-items: center;
+    gap: 1.25rem;
+    margin: 1.25rem auto;
+}
+
+.card {
+    background-color: burlywood;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 500px;
+    padding: 1.25rem 1.25rem;
+    border-radius: 1.875rem;
+    gap: 0.625rem;
+}
+
+.image {
+    width: 350px;
+    height: 300px;
+    border-radius: 0.625rem;
+}
+
+.card__text {
+    padding: 0.125rem 0.625rem;
+    font-weight: 400;
+    font-size: 15px;
+    text-align: justify;
+}

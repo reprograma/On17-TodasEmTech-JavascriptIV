@@ -1,0 +1,11 @@
+body {
+    background: url('fundo.jpg');
+    height: 100%;
+  }
+
+  #demo {
+    margin: 9.063rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
