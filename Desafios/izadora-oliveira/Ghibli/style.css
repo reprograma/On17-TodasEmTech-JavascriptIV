@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,300;1,500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-size: 10px;
+  font-family: "Roboto", sans-serif;
+  background-color: #fac213;
+}
+
+.titlePage {
+  text-align: center;
+  font-size: 3rem;
+  padding: 2rem;
+  color: #d61c4e;
+  letter-spacing: 0.1rem;
+}
+#container {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 4rem;
+  padding: 2rem 0;
+}
+@media screen and (max-width: 320px) {
+  .card-container {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+  }
+}
+
+.photography {
+  margin: 1rem 0;
+  border: solid 2px #FEF9A7;
+  border-radius: 2rem;
+  width: 20rem;
+  height: 18rem;
+}
+
+.title {
+  padding: 0.2rem;
+  font-size: 1.1rem;
+  color: black;
+}
+
+.textStrong{
+  color: #d61c4e
+}
+
+footer {
+text-align: center;
+font-size: 1.5rem;
+padding: 1rem;
+background-color: #d61c4e;
+}
