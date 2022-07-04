@@ -12,8 +12,8 @@ body {
   display: flex;
   justify-content: flex-start;
   margin-left: 20px;
-  align-items:flex-end;
-  background-image: url();
+  align-items: center;
+  background-image: url(./yugi.jpg);
   background-size: cover;
 }
 
@@ -30,7 +30,7 @@ body {
   height: 400px;
 }
 
-.card .image {
+.card img {
   width: 100%;
   align-self: center;
   box-shadow: 1px 1px 10px #7f8fa6;
@@ -47,7 +47,7 @@ body {
 }
 
 .type::before {
-  content: "✡️";
+  content: '✡️';  
   font-style: normal;
   margin-right: 2px;
 }
