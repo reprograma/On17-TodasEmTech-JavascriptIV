@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body{
+    background-color: rgb(24, 8, 119);
+    display:flex ;
+    justify-content: space-around;
+    align-items: center;
+  
+  }
+  
+  .section_container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    height: 100%;
+  
+  }
+  
+  .div_card {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 550px;
+    border: 1px solid #e6a313;
+    box-shadow: 1px 1px 10px #e6a313;
+    margin:30px;
+    background-color: black;
+  }
+  
+  .div_card .container_imagem {
+    width: 100%;
+    height: 80%;
+    align-self: center;
+  }
+  
+  .div_card p,
+  h1 {
+    color: #fff;
+    text-align: center;
+    margin: 3px 0;
+  }
+  
