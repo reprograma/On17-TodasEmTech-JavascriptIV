@@ -1,41 +1,37 @@
-// Exercício dos doguinhos com XMLHttpRequest()
+const dogName = "clumber";
+const url = `https://dog.ceo/api/breed/${dogName}/images/random`;
 
-const dogName = 'clumber'
-const url = `https://dog.ceo/api/breed/${dogName}/images/random`
-const container = document.getElementById("demo")
+const container = document.getElementById("demo");
 
+//usando XMLHttpRequest()
 function doguinhoRequest() {
-  const request = new XMLHttpRequest();
-
-  request.open("GET", url, true)
-
+  const request = new XMLHttpRequest(); //objeto nomeado como request
+  request.open("GET", url, true);
   request.onload = () => {
-    if(request.readyState == 4 && request.status == 200) {
-      const data = JSON.parse(request.response)
-      const dogPic = document.createElement('img')
-      dogPic.setAttribute('src', data.message)
-      container.appendChild(dogPic)
+    if (request.readyState == 4 && request.status == 200) {
+      const data = JSON.parse(request.response);
+      const dogPic = document.createElement("img");
+      dogPic.setAttribute("src", data.message); //é a url que é visto no postman
+      container.appendChild(dogPic);
     }
-  }
-
-  request.send()
+  };
+  request.send();
 }
 
-// doguinhoRequest()
+//doguinhoRequest();
 
-// Exercicio dos doguinhos com fetch()
+//usando fetch-  mais usado
 
 async function getDoguinho() {
   try {
-    const resposta = await fetch(url)
-    const data = await resposta.json()
-    const dogPic = document.createElement('img')
-    dogPic.setAttribute('src', data.message)
-    container.appendChild(dogPic)
-  }
-  catch(err) {
-    console.error("HTTP Error: " + err)
+    const resposta = await fetch(url);
+    const data = await resposta.json(); // transforma a informação é um objeto json
+    const dogPic = document.createElement("img");
+    dogPic.setAttribute("src", data.message); //é a url que é visto no postman
+    container.appendChild(dogPic);
+  } catch (err) {
+    console.error("HTTP Error: " + err);
   }
 }
 
-getDoguinho()
+getDoguinho();
