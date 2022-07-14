@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+  font-family: "JetBrains Mono";
+  color: #353b48;
+}
+
+body {
+  background-color: #353b48;
+  height: 95vh;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 20rem;
+  align-items: center;
+}
+
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card{
+  background-color: #FFF;
+  border: 4px solid red;
+  border-radius: 10px;
+  max-width: 500px;
+  padding: 15px;
+  margin: 10px;
+}
+
+.container-img{
+  width: 300px;
+  margin: auto;
+}
+
+.titulo{
+  text-align: center;
+}
+
+img{
+  max-width: 100%;
+}
+
+ul{
+  padding: 0;
+}
+
+li{
+  list-style: none;
+} 
