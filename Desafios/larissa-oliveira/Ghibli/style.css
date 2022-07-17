@@ -1,0 +1,47 @@
+body{
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+.div-titulo{
+    text-align: center;
+    background-color: #1fd0d0;
+    padding: 15px;
+}
+
+.titulo-site{
+    color: white;
+    font-size: 50px;
+}
+
+
+.card{
+    border: 1px solid #129191;
+    margin: 4% 25%  ;
+    padding: 20px;
+}
+
+
+.titulo{
+    font-size: 30px;
+}
+
+.descricao {
+    margin: 0 auto;
+    width: 60%;
+}
+
+.footer{
+    text-align: center;
+    background-color: #1fd0d0;
+    width: 100%;
+    padding: 5px; 
+}
+
+
+.texto-footer{
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+}
