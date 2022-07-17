@@ -1,0 +1,48 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p, h4, h5, h6 {
+    margin: 0;
+}
+
+p {
+    font-size: 14px;
+}
+
+.cep-card {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 12px;
+    max-width: 300px;
+    border-radius: 6px;
+    border: 1px solid #DDD;
+    background-color: #fafafa;
+    padding: 12px;
+    align-content: space-around;
+    justify-content: space-around;
+}
+
+.input-div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-width: 110px;
+    align-content: center;
+    text-align: center;
+}
+
+label {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+input {
+    font-size: 18px;
+}
+
+button {
+    font-size: 18px;
+}
