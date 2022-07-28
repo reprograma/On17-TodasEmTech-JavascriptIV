@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Fahkwang:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body{
+    font-family: 'Fahkwang', sans-serif;
+    background: url(./ghibli-bg.png);
+    display:flex ;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .section_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    height: 100%;
+  }
+  
+  .div_card {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 500px;
+    margin:30px;
+    background-color: rgba(255, 255, 255, 0.842);
+    border-radius: 30px;
+  }
+  
+  .div_card .container_imagem {
+    width: 100%;
+    height: 80%;
+    align-self: center;
+  }
+  
+  h1 {
+    font-size: 4rem;
+    text-align: center;
+    box-sizing: border-box;
+    color: rgb(0, 0, 0);
+    text-shadow: 0.1em 0.2em 0.1em rgba(0, 0, 0, 0.336);
+}
+
+.div-title {
+  padding: 10px;
+  margin: 10px;
+  background-color: rgb(255, 255, 255, 0.842);
+  border-bottom: 30px;
+
+}
+
+  .div_card p,
+  h2 {
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-top: 10px;
+
+  }
+  
+  .header-div {
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
