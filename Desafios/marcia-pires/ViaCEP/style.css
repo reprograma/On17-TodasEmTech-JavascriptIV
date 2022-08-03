@@ -1,0 +1,21 @@
+{
+    margin:0;
+    padding:0;
+    border:0
+}
+
+body{
+    font-family: 'Fascinate', cursive;
+    text-align: center;
+    background-color: rgb(206, 206, 206);
+}
+
+header {
+    padding: 32px;
+    border-bottom: 1px solid crimson;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
